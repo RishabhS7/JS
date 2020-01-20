@@ -1,0 +1,98 @@
+<!Doctype html>
+<html>
+    
+    <body>
+        <h1>I am new to this</h1>
+        <button type="button" id="btn" onclick="handle()">
+            On
+        </button>
+        <p id="demo">This is me</p>
+        <br>
+        <br>
+        <button id ="btn1" onclick ="handle1()">off</button>
+        <p id ="demo1" style ="display:none">hidden Magic fonts in html</p>
+        <p id="demo2">none</p>
+        <script src="./mainjs.js"></script>
+        <button type="button" id="btn" onclick="handle3()">
+        Click me to get result</button>
+        <p id ="demo3">Result</p>
+        <p id ="demo4"></p>
+        <p id="demo5">Hey</p> 
+        
+        
+        
+        <button type = "button" id ="btn3" onclick = "handle4()" onmouseout = "this.style.backgroundColor='green'" onmouseover = "this.style.backgroundColor='red'">Turnns red on mouseover</button>
+        
+
+        
+    
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+
+    <script>
+    var str = "Apple, Banana, Kiwi";
+    var res = str.slice(7,13);
+    document.getElementById("demo6").innerHTML = res; 
+    document.getElementById("demo7").innerHTML = str;
+    function hamdle4() {
+    var str = document.getElementById("demo7").innerHTML; 
+    var txt = str.replace("Banana","W3Scho");
+    document.getElementById("demo7").innerHTML = txt;
+  }
+  </script>
+  <script>
+        var cars = ["Saab", "Volvo", "BMW"];
+        document.getElementById("demo8").innerHTML = cars[0];
+</script>
+
+<script>
+    var txt = "";
+    var numbers = [45, 4, 9, 16, 25];
+    numbers.forEach(myFunction1);
+    document.getElementById("demo9").innerHTML = txt;
+    
+    function myFunction1(value, index, array) {
+      txt = txt + value + "<br>"; 
+    }
+    </script>
+    <button type ="button" id ="btn6" onclick ="handle5()">Date</button>
+
+    <button type ="button" id ="btn7" onclick ="handle6()">Day</button>
+    <p id="demo11"></p>
+
+
+    <script>
+        var day;
+        switch (new Date().getDay()) {
+          case 0:
+            day = "Sunday";
+            break;
+          case 1:
+            day = "Monday";
+            break;
+          case 2:
+            day = "Tuesday";
+            break;
+          case 3:
+            day = "Wednesday";
+            break;
+          case 4:
+            day = "Thursday";
+            break;
+          case 5:
+            day = "Friday";
+            break;
+          case  6:
+            day = "Saturday";
+        }
+        document.getElementById("demo11").innerHTML = "Today is " + day;
+        </script>
+
+
+<p id = "demo13">hellooo</p>
+    </body>
+    
+</html>
